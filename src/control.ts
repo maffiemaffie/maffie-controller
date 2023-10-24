@@ -10,7 +10,7 @@ template.innerHTML = `
  */
 abstract class Control extends HTMLElement {
     private _value:any;
-    private _listeners:Array<UpdateListener>;
+    private _listeners:Array<UpdateListener> = [];
     private _label:string;
     
     /**
@@ -25,7 +25,7 @@ abstract class Control extends HTMLElement {
     }
 
     /**
-     * Returns the [inputs]{@link HTMLInputElement} for controlling this control.
+     * Returns the {@link HTMLInputElement | inputs} for controlling this control.
      * @returns The inputs.
      */
     protected abstract createControls():Array<HTMLInputElement|HTMLFieldSetElement>;
@@ -99,7 +99,7 @@ abstract class Control extends HTMLElement {
 }
 
 /**
- * Handles the event when a [control's]{@link Control} value changes.
+ * Handles the event when a {@link Control | control's} value changes.
  * @see Control
  * @see MaffieControlUpdateEvent
  */
@@ -108,7 +108,7 @@ interface UpdateListener {
 }
 
 /**
- * The event emitted when a [control's]{@link Control} value changes.
+ * The event emitted when a {@link Control | control's} value changes.
  * @property emmittedBy The {@link Control} that emitted the event.
  * @property oldValue The value of the {@link Control} before the change.
  * @property newValue The value of the {@link Control} after the change.
