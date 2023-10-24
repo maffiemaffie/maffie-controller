@@ -1,0 +1,27 @@
+{
+  "name": "@maffieramos/html-controller",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/controller.esm.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Elia Cohen",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.23.2",
+    "@babel/preset-env": "^7.23.2",
+    "@babel/preset-typescript": "^7.23.2",
+    "@rollup/plugin-typescript": "^11.1.5",
+    "babel-jest": "^29.7.0",
+    "eslint": "^8.51.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.28.1",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "rollup": "^4.1.4",
+    "rollup-plugin-dts": "^6.1.0",
+    "tslib": "^2.6.2",
+    "typescript": "^5.2.2"
+  }
+}
