@@ -1,0 +1,11 @@
+{ 
+    "extends": [
+        "airbnb/base",
+        "plugin:import/typescript"
+    ],
+    "rules": {
+        "no-underscore-dangle" : "off",
+        "no-plusplus": "off",
+        "import/extensions": "off"
+    }
+}
